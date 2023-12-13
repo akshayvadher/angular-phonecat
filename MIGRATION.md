@@ -8,19 +8,19 @@
 
 ### Switch to typescript
 
-```bash
+```shell
 npm i typescript --save-dev
 ```
 
 Other dependencies
 
-```bash
+```shell
 npm install @types/jasmine @types/angular @types/angular-animate @types/angular-aria @types/angular-cookies @types/angular-mocks @types/angular-resource @types/angular-route @types/angular-sanitize --save-dev
 ```
 
 Angular material (only if you use it)
 
-```bash
+```shell
 npm install @types/angular-material --save-dev
 ```
 
@@ -64,7 +64,7 @@ Add typescript configuration
 
 Change scripts in `package.json`
 
-```bash
+```shell
 "scripts": {
 "tsc": "tsc",
 "tsc:w": "tsc -w",
@@ -72,7 +72,7 @@ Change scripts in `package.json`
 
 and keep the compilor running
 
-```bash
+```shell
 npm run tsc:w
 ```
 
@@ -101,3 +101,32 @@ angular.module('phoneList').component('phoneList', {
   controller: PhoneListController
 });
 ```
+
+## Bootstrap Angular
+
+Install
+
+```shell
+npm install --save @angular/common@latest @angular/compiler@latest @angular/core@latest @angular/forms@latest @angular/platform-browser@latest @angular/platform-browser-dynamic@latest @angular/router@latest
+```
+
+Install dependencies
+
+```shell
+npm install --save rxjs@latest zone.js@latest
+npm install --save-dev typescript@latest
+```
+
+Install systemjs
+```shell
+npm install --save systemjs-plugin-babel@latest
+```
+Create [systemjs.config.js](systemjs.config.js)
+
+
+Move index.html from app to root but add `<base href="/app">` to the head for static files
+
+Create [app.module.ts](app/app.module.ts) and bootstrap hybrid app
+
+Create [main.ts](app/main.ts) and bootstrap angular app
+
