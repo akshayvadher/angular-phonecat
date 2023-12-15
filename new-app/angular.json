@@ -25,9 +25,29 @@
               "src/assets"
             ],
             "styles": [
+              "../app/bower_components/bootstrap/dist/css/bootstrap.css",
+              "../app/app.css",
+              "../app/app.animations.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../app/bower_components/jquery/dist/jquery.js",
+              "../app/bower_components/angular/angular.js",
+              "../app/bower_components/angular-animate/angular-animate.js",
+              "../app/bower_components/angular-resource/angular-resource.js",
+              "../app/bower_components/angular-route/angular-route.js",
+              "../app/app.module.js",
+              "../app/app.config.js",
+              "../app/app.animations.js",
+              "../app/core/core.module.js",
+              "../app/core/checkmark/checkmark.filter.js",
+              "../app/core/phone.module.js",
+              "../app/core/phone/phone.service.js",
+              "../app/phone-list/phone-list.module.js",
+              "../app/phone-list/phone-list.component.js",
+              "../app/phone-detail/phone-detail.module.js",
+              "../app/phone-detail/phone-detail.component.js"
+            ]
           },
           "configurations": {
             "production": {
