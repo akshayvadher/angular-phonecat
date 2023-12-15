@@ -19,7 +19,7 @@ export class PhoneService {
   }
 
   getAll() {
-    return this.http.get<any[]>('assets/phones/phones.json').toPromise();
+    return this.http.get<any[]>('assets/phones/phones.json');
   }
 }
 

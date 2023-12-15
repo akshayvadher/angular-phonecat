@@ -43,7 +43,6 @@
               "../app/core/checkmark/checkmark.filter.js",
               "../app/core/phone.module.js",
               "../app/phone-list/phone-list.module.js",
-              "../app/phone-list/phone-list.component.js",
               "../app/phone-detail/phone-detail.module.js",
               "../app/phone-detail/phone-detail.component.js"
             ]
