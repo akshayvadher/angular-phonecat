@@ -1,7 +1,14 @@
 declare const angular: any;
 
+export interface Phone {
+  id: string;
+  imageUrl: string;
+  name: string;
+  snippet: string;
+}
+
 class PhoneListController {
-  phones: any[];
+  phones: Phone[];
   orderProp: string;
   query: string = '';
 
