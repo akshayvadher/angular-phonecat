@@ -1,3 +1,22 @@
+This is the sample repository created to showcase AngularJs to Angular migration and presented in Google Developer Group DevFest 2023.
+
+There are several branches
+
+Preparation
+- talk/0 is the current state of the application
+- talk/1 minor refactoring for one component per file
+- talk/2 minor refactoring for folder by feature (this is mostly copy of original phonecat app of version 1.5 snapshot)
+- talk/3 is typescript introduction (however this step is not proper validated)
+
+Migration
+- talk/4 bootstraping angular (no change)
+- talk/4.1 is bootstraping angularjs inside angular app
+- talk/5 is migration of one service - phone service
+- talk/6 is migration of one component and router with phone list component
+
+next section is direct copy of the upstream readme file
+
+---
 # AngularJS Phone Catalog Tutorial Application
 
 
